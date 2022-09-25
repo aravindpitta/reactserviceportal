@@ -1,3 +1,5 @@
+
+
 .expense-item {
     display: flex;
     justify-content: space-between;
@@ -54,4 +56,15 @@
       font-size: 1.25rem;
       padding: 0.5rem 1.5rem;
     }
+    
+    .button__change{
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: #f53263;
+      border: 1px solid rgb(194, 177, 177);
+      padding: 0.5rem;
+      border-radius: 12px;
+    }
+  
   }
