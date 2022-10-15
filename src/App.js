@@ -1,6 +1,6 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 import "./App.css";
-import NewExpense from "./components/newExpenses/NewExpense";
+import NewExpense from "./components/NewExpenses/NewExpense";
 import { useState, props } from "react";
 
 const DUMMY_EXPENSES = [
@@ -14,7 +14,7 @@ const DUMMY_EXPENSES = [
     id: "e2",
     title: "Utility Bill",
     amount: 110.0,
-    date: new Date(2022, 8, 1),
+    date: new Date(2020, 8, 1),
   },
   {
     id: "e3",
@@ -26,7 +26,19 @@ const DUMMY_EXPENSES = [
     id: "e4",
     title: "Milk Bill",
     amount: 180.0,
-    date: new Date(2022, 8, 5),
+    date: new Date(2021, 2, 5),
+  },
+  {
+    id: "e5",
+    title: "Current Bill",
+    amount: 180.0,
+    date: new Date(2022, 5, 5),
+  },
+  {
+    id: "e6",
+    title: "Internet Bill",
+    amount: 171.0,
+    date: new Date(2022, 11, 5),
   },
 ];
 

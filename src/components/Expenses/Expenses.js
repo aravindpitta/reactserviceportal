@@ -4,7 +4,8 @@ import ExpensesFilter from './ExpensesFilter'
 import "./Expenses.css";
 import ExpenseDate from "./ExpenseDate";
 import ExpensesList from "./ExpensesList";
-
+import Chart from "../Chart/Chart";
+import ExpensesChart from "./ExpensesChart";
 function Expenses(props) {
   //const expenses = [];
   // for (let i in props.items) {
@@ -27,7 +28,9 @@ function Expenses(props) {
 
   return (
     <div className="expenses">
+      
       <ExpensesFilter selected={selectedYear} onChangeSelectedYear={changeExpenseYearHandler}/>
+      <ExpensesChart expenses={filteredExpensesList}/>
       <ExpensesList items={filteredExpensesList}/>
     </div>
   );
